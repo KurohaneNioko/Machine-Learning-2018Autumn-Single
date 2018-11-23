@@ -47,6 +47,11 @@ def total_SO2_to_nonfree(df):
         lambda x: x[data_meaning[6]] - x[data_meaning[5]], axis=1)
     return df
 feature = total_SO2_to_nonfree(feature)
+
+# import seaborn as sns
+# plt.figure()
+# sns.heatmap(df.corr())
+# plt.show()
 # standardize feature
 #scaler = skl.preprocessing.StandardScaler().fit(feature)
 #scaler = skl.preprocessing.Normalizer().fit(feature)
